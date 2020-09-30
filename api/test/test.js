@@ -187,7 +187,7 @@ describe('Testing the book endpoints:', () => {
       });
   });
 
-  it('It should not delete a book with non-numeric id', (done) => {
+  it('It should not delete a book with non-numeric ID', (done) => {
     const bookId = 'bbb';
     chai.request(app)
       .delete(`/api/v1/books/${bookId}`)
