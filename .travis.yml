@@ -12,6 +12,7 @@ services:
 env:
   global:
   - NODE_ENV=test
+  - COVERALLS_PARALLEL=true
 
 before_script:
   - psql -c 'create database onlinestore_test;' -U postgres
