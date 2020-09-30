@@ -13,6 +13,7 @@ env:
   global:
   - NODE_ENV=test
   - COVERALLS_PARALLEL=true
+  - CODECLIMATE_REPO_TOKEN=58ba0e46c362e30ad2806e037bf5afc6cba5ff45c459d511951c718211fab670
 
 before_script:
   - psql -c 'create database onlinestore_test;' -U postgres
