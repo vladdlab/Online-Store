@@ -11,7 +11,7 @@
     "coveralls-coverage": "coveralls < lcov.info",
     "codeclimate-coverage": "codeclimate-test-reporter < lcov.info",
     "coverage": "nyc npm test && npm run generate-lcov && npm run coveralls-coverage && npm run codeclimate-coverage",
-    "start": "node ./api/index.js"
+    "start": "babel-node ./api/index.js"
   },
   "author": "",
   "license": "ISC",
